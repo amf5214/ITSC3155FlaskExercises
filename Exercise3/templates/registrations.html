@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block head%}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'registrations.css') }}"/>
+{% endblock %}
+
+{% block body %}
+    <div class="registrations">
+        <h1>Current Registrations</h1>
+        <h3>The following table displays all of the current club registrations</h3>
+        <table>
+            {% if admin==True %}
+                <th>Registration ID</th>
+            {% endif %}
+            <th>Student Name</th>
+            <th>Student ID</th>
+            <th>Club Registered</th>
+            {% for reg in registrations %}
+                    <tr>
+                        {% if admin==True %}
+                            <td>{{reg.id}}</td>
+                        {% endif %}
+                        <td>{{reg.student_name}}</td>
+                        <td>{{reg.student_id}}</td>
+                        <td>{{reg.club_registered}}</td>
+
+                        {% if admin==True %}
+                            <td><a href="/delete/{{reg.id}}">Delete</a></td>
+                        {% endif %}
+
+                    </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endblock%}

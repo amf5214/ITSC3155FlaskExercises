@@ -1,0 +1,45 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.club-registration {
+    margin-left: 12%;
+    margin-right: 12%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.club-registration form {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.label-element {
+    margin-top: 1em;
+    padding: 0.5em;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-element {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+#submit-button {
+    margin-top: 1em;
+    background-color: #1789e5;
+    color: white;
+    padding: 0.5em;
+    flex-grow: 0.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    align-self: flex-start;
+}

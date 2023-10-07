@@ -1,0 +1,38 @@
+body {
+
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #3A444C;
+}
+
+.toolbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.toolbar li {
+    cursor: pointer;
+    margin-left: 4%;   
+    margin-right: 4%;   
+    margin-top: 0;
+    margin-bottom: 0;      
+    padding: 1em;
+}
+
+.toolbar li a {
+    text-decoration: none;
+    color: white;
+    text-wrap: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toolbar li:hover {
+    background-color: #4b5862;
+}

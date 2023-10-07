@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head%}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'index.css') }}"/>
+{% endblock %}
+
+{% block body %}
+    <div class="club-registration">
+        <h1>Club Registration</h1>
+        <h3>Use the following form to register for student organizations</h3>
+        <form action="/" method="POST">
+            <label class="form-label">Full Name</label>
+            <input type="text" name="name" class="form-element" id="name" placeholder="Full Name">
+            <label class="form-label">Student ID</label>
+            <input type="number" name="student-id" class="form-element" id="student-id">
+            <label class="form-label">Club</label>
+            <select name="club" id="club" class="form-element">
+                {% for option in options %}
+                    <option value="{{option}}">{{option}}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Submit" id="submit-button">
+        </form>
+    </div>
+{% endblock%}

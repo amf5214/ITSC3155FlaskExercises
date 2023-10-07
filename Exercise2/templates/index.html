@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <div>
+        <h1 class="header">Check if an integer is even</h1>
+        <form action="/" method="POST">
+            <input type="number" class="numcheck" name="numcheck" style=" border-radius: .5em ; margin-right: 20% ; margin-left: 20% ; ">
+            <input type="submit" value="Check" class="submit-button" style=" border-radius: .5em ; margin-right: 20% ; margin-left: 20% ; ">
+        </form>
+    </div>
+    {% if respval %}
+    <h2 class="output">{{ respval }}</h2>
+
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.top-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: darkblue;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+   
+}
+
+.time-data {
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    font-family: grandstander;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
